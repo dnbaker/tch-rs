@@ -16,8 +16,9 @@ fn main() {
     t.print();
     let t = Tensor::randn(&[5, 4], kind::FLOAT_CPU);
     t.print();
-    let t2 = Tensor::randn(&[20, 144, 13, 2], (Kind::Float, Device::cuda_if_available()));
-    println!("t2: {}.", t2);
+    let t2 = Tensor::randn(&[2, 2, 13, 2], (Kind::Float, Device::cuda_if_available()));
+    t2.print();
+    //println!("t2: {}.", t2);
     (&t + 1.5).print();
     (&t + 2.5).print();
     let mut t = Tensor::float_vec(&[1.1, 2.1, 3.1]);
