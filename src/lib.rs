@@ -22,5 +22,5 @@ pub mod nn;
 pub mod vision;
 
 pub mod kind {
-    pub use super::wrappers::kind::{FLOAT_CPU, INT64_CPU};
+    pub use super::wrappers::kind::{FLOAT_CPU, INT64_CPU, FLOAT_GPU, INT64_GPU};
 }
